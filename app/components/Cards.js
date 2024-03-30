@@ -2,13 +2,14 @@ import React from "react";
 import { LuFileSpreadsheet } from "react-icons/lu";
 import { LuDownload } from "react-icons/lu";
 import { IoCloseOutline } from "react-icons/io5";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion"
+import { motion } from "framer-motion"
 
 function Cards({ data }) {
   return (
-      <div className="relative w-60 h-72 flex-shrink-0 overflow-hidden rounded-[40px] text-white bg-zinc-900/70 p-7">
+      <div className="card relative w-60 h-72 flex-shrink-0 overflow-hidden rounded-[40px] text-white bg-zinc-900/70 p-7">
         <LuFileSpreadsheet />
-        <p className="text-sm mt-5 font-medium leading-tight ">{data.desc}</p>
+        <p className="para text-sm mt-5 font-medium leading-tight ">{data.desc}</p>
         <div className="absolute w-full left-0 bottom-0">
           <div className="flex align-middle justify-between px-8 mb-5">
             <h5>{data.filesize}</h5>
@@ -30,6 +31,7 @@ function Cards({ data }) {
             </div>
           )}
         </div>
+
       </div>
   );
 }

@@ -36,7 +36,7 @@ function Foreground() {
   ];
   return (
     <>
-      <div className="fixed top-0 left-0 z-[3] h-full overflow-auto w-full p-5 flex flex-wrap gap-5 pt-[5%]">
+      <div className="overlay fixed top-0 left-0 z-[3] h-full overflow-auto w-full p-5 flex flex-wrap gap-5 pt-[5%]">
         {data.map((item, index) => (
           <Cards data={item} />
         ))}

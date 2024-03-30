@@ -9,3 +9,19 @@
 ::selection{
   color: rgb(250, 157, 51);
 }
+
+@media (max-width:500px) {
+  .card{
+    height: 30vh;
+    width: 40vw;
+  }
+  .para{
+    font-size: 12px;
+  }
+  .overlay{
+    padding-top: 15vh;
+  }
+  .docs{
+    font-size: 25vw;
+  }
+}
